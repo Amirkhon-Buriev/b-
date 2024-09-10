@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайное число</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 2em;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div id="randomNumber"></div>
+    <script>
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 100) + 1;
+        }
+
+        document.getElementById('randomNumber').textContent = getRandomNumber();
+    </script>
+</body>
+</html>
